@@ -1,0 +1,13 @@
+The program is a simple calculator that allows the user to perform basic arithmetic operations (addition, subtraction, multiplication, and division) on two numbers. It has a GUI built using the Java Swing library, which is a collection of classes for creating graphical user interface (GUI) components such as buttons, labels, and text fields.
+
+The program is divided into three logical parts: the backend/math operations, the GUI, and the main class. The backend/math operations are defined in the CalculatorOperations class, which has four static methods for each of the arithmetic operations. These methods take in two numbers as arguments and return the result of the arithmetic operation.
+
+The GUI is defined in the CalculatorGUI class, which extends JFrame and represents the main window of the calculator. It has four buttons (addButton, subtractButton, multiplyButton, and divideButton) for the arithmetic operations and two text fields (num1Field and num2Field) for the user to enter the numbers. It also has a label (resultLabel) to display the result of the arithmetic operation.
+
+The CalculatorGUI class also has four action listeners, one for each of the buttons. An action listener is a class that implements the ActionListener interface and has a method called actionPerformed that is called when the corresponding button is clicked. Each action listener gets the numbers from the text fields, calls the corresponding method in the CalculatorOperations class to perform the arithmetic operation, and sets the result in the result label.
+
+The main class is the Calculator class, which creates an instance of the CalculatorGUI class and sets its title, size, and visibility. When the program is run, the main method is called and it creates the calculator window, which appears on the screen and is ready for the user to use.
+
+When the user enters two numbers in the text fields and clicks one of the four buttons, the corresponding action listener is called and the program performs the arithmetic operation on the numbers. The result is then displayed in the result label. The program also includes exception handling to handle invalid input and division by zero errors. If the user enters non-numeric characters in the text fields, the program will display an error message in the result label. If the user tries to divide by zero, the program will display an error message and prevent the division from being performed.
+
+Overall, this program provides a simple and easy-to-use interface for performing basic arithmetic operations. It has a clean and intuitive GUI and includes error handling to ensure that the program operates smoothly and correctly.
